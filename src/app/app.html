@@ -1,0 +1,18 @@
+<div class="container" *ngIf="!answeredYes">
+  <h1>💌 {{ herName }}, will you be my Galentine?🥹</h1>
+
+  <div class="buttons">
+    <button class="yes" (click)="sayYes()">Yes💖</button>
+    <button class="no" (mouseover)="moveNoButton($event)">No 😒</button>
+  </div>
+</div>
+
+<div class="container yes-screen" *ngIf="answeredYes">
+  <h1>🥰 {{ herName }} said YES!🎉</h1>
+  <p>You just made my Valentine’s Day perfect 💕</p>
+
+  <p class="fade-text">
+    I’m so thankful to have you guys in my life🌟✨🌹. It’s not just Valentine’s Day,
+    you two make every day of the year extra special just by being in my life✨💖.
+  </p>
+</div>

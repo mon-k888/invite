@@ -1,0 +1,67 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: white;
+  font-size: clamp(2rem, 6vw, 3rem);
+}
+
+p {
+  color: white;
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+button {
+  padding: 14px 28px;
+  margin: 10px;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.yes {
+  background-color: #ff2e63;
+  color: white;
+}
+
+.no {
+  background-color: #f1f1f1;
+}
+
+/* fade-in text */
+.fade-text {
+  opacity: 0;
+  animation: fadeIn 10s forwards;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #f1f1f1;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.yes-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: visible;
+}
